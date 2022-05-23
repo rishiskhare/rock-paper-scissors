@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import Navbar from "./components/Navbar";
+import Scorecard from "./components/Scorecard";
+import Form from "./components/Form";
+import Showdown from "./components/Showdown";
+import { React, useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const [playerCharacter, setPlayerCharacter] = useState("");
+  const navigate = useNavigate();
+
+  const [score, setScore] = useState({
+    playerScore: 0,
+    computerScore: 0,
+  });
+
+  const handleChange = (event) => {
+    setPlayerCharacter(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/showdown");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="content">
+        <Scorecard score={score} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Form handleChange={handleChange} handleSubmit={handleSubmit} />
+            }
+          ></Route>
+          <Route
+            path="/showdown"
+            element={
+              <Showdown
+                playerCharacter={playerCharacter}
+                score={score}
+                setScore={setScore}
+              />
+            }
+          ></Route>
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

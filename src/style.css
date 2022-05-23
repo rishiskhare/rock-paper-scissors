@@ -1,0 +1,154 @@
+html,
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: linear-gradient(180deg, #c7ffc9 0%, rgba(237, 246, 255, 0) 98.96%)
+    no-repeat;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Karla";
+  padding: 10px 0px;
+}
+
+.nav--title {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.nav--video__link {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+.nav--video__text {
+  font-size: 12px;
+}
+
+.scorecard--container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.scorecard--player__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  min-width: 100px;
+}
+
+.scorecard--computer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  min-width: 100px;
+}
+
+.scorecard--player__name {
+  color: #6d72f0;
+  margin: 5px;
+}
+
+.scorecard--player__score {
+  color: #6d72f0;
+  font-size: 40px;
+}
+
+.scorecard--computer__name {
+  color: #ff5959;
+  margin: 5px;
+}
+
+.scorecard--computer__score {
+  color: #ff5959;
+  font-size: 40px;
+}
+
+.scorecard--separator {
+  padding: 10px;
+  font-size: 40px;
+}
+
+form {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form--radio__container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form--submit,
+.play-again-btn {
+  border-style: none;
+  padding: 10px 20px;
+
+  background: #6d72f0;
+  border-radius: 20px;
+
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+form label {
+  font-family: "Karla";
+  margin-left: 10px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.form--radio__item {
+  margin: 10px;
+  width: 100px;
+}
+
+.showdown--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showdown--container--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.showdown--img {
+  width: 100px;
+  margin: 20px;
+}
+
+.showdown--text {
+  text-align: center;
+}
