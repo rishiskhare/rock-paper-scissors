@@ -21,7 +21,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate("/showdown");
+    navigate("/rock-paper-scissors/showdown");
   };
 
   return (
@@ -31,13 +31,13 @@ const App = () => {
         <Scorecard score={score} />
         <Routes>
           <Route
-            path="/"
+            path="/rock-paper-scissors"
             element={
               <Form handleChange={handleChange} handleSubmit={handleSubmit} />
             }
           ></Route>
           <Route
-            path="/showdown"
+            path="/rock-paper-scissors/showdown"
             element={
               <Showdown
                 playerCharacter={playerCharacter}
