@@ -8,7 +8,7 @@ const Navbar = () => {
         className="nav--video__link"
         href="https://www.youtube.com/watch?v=x5Q6-wMx-K8"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <h2 className="nav--video__text">See video</h2>
       </a>
