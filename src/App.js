@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Scorecard from "./components/Scorecard";
 import Form from "./components/Form";
 import Showdown from "./components/Showdown";
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 const App = () => {
