@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rock-paper-scissors/precache-manifest.85e4c233df88745054ab60f594bdaab4.js"
+  "/rock-paper-scissors-lizard-spock/precache-manifest.958d835bb3afadd8542ba59d8d1dad70.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/rock-paper-scissors/index.html", {
+workbox.routing.registerNavigationRoute("/rock-paper-scissors-lizard-spock/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
