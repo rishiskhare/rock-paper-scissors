@@ -151,7 +151,7 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
       </div>
       <Link
         class="play-again-btn"
-        to="/rock-paper-scissors"
+        to="/rock-paper-scissors-lizard-spock"
         onClick={() => setComputerCharacter("")}
       >
         Play Again
