@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rock-paper-scissors-lizard-spock/precache-manifest.958d835bb3afadd8542ba59d8d1dad70.js"
+  "/rock-paper-scissors-lizard-spock/precache-manifest.9afb6b445f7136d9a1e63b3ad8f86198.js"
 );
 
 workbox.clientsClaim();
