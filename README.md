@@ -6,10 +6,10 @@ The concept of this project was inspired by a [funny clip](https://www.youtube.c
 
 ![Alt Text](bigbangtheory.gif)
 
-## [Site Demo (Github Pages)](https://rishiskhare.github.io/rock-paper-scissors-lizard-spock)
-
-The code is accessible in the folders above. The game is deployed on Github Pages and can be found at https://rishiskhare.github.io/rock-paper-scissors-lizard-spock
-
 ### Rules Of Rock Paper Scissors Lizard Spock
 
 As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."
+
+## [Site Demo (Github Pages)](https://rishiskhare.github.io/rock-paper-scissors-lizard-spock)
+
+The game is deployed on Github Pages and can be found at https://rishiskhare.github.io/rock-paper-scissors-lizard-spock
