@@ -48,10 +48,10 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
         setWinnerText("Lizard poisons Spock");
       } else if (computerCharacter === "rock") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Rock crushes Lizard");
+        setWinnerText("Lizard is crushed by Rock");
       } else if (computerCharacter === "scissors") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Scissors decapitates Lizard");
+        setWinnerText("Lizard is decapitated by Scissors");
       }
     } else if (playerCharacter === "paper") {
       if (computerCharacter === "rock") {
@@ -62,10 +62,10 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
         setWinnerText("Paper disproves Spock");
       } else if (computerCharacter === "scissors") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Scissors cuts Paper");
+        setWinnerText("Paper is cut by Scissors");
       } else if (computerCharacter === "lizard") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Lizard eats Paper");
+        setWinnerText("Paper is eaten by Lizard");
       }
     } else if (playerCharacter === "rock") {
       if (computerCharacter === "scissors") {
@@ -76,10 +76,10 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
         setWinnerText("Rock crushes Lizard");
       } else if (computerCharacter === "paper") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Paper covers Rock");
+        setWinnerText("Rock is covered by Paper");
       } else if (computerCharacter === "spock") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Spock vaporizes Rock");
+        setWinnerText("Rock is vaporized by Spock");
       }
     } else if (playerCharacter === "scissors") {
       if (computerCharacter === "paper") {
@@ -90,10 +90,10 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
         setWinnerText("Scissors decapitates Lizard");
       } else if (computerCharacter === "rock") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Rock crushes Scissors");
+        setWinnerText("Scissors is crushed by Rock");
       } else if (computerCharacter === "spock") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Spock smashes Scissors");
+        setWinnerText("Scissors is smashed by Spock");
       }
     } else if (playerCharacter === "spock") {
       if (computerCharacter === "rock") {
@@ -104,10 +104,10 @@ const Showdown = ({ playerCharacter, score, setScore }) => {
         setWinnerText("Spock smashes Scissors");
       } else if (computerCharacter === "paper") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Paper disproves Spock");
+        setWinnerText("Spock is disproved by Paper");
       } else if (computerCharacter === "lizard") {
         setScore({ ...score, computerScore: score.computerScore + 1 });
-        setWinnerText("Lizard poisons Spock");
+        setWinnerText("Spock is poisoned by Lizard");
       }
     }
   };
